@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="/javascript/konfirmasi-form.js"></script>
+</head>
+
+<body>
+    <h2>Tugas Pemrograman Web</h2>
+    <form method="POST" class="container">
+        <p>
+            <label>Nama:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+            <label>NPM:</label>
+            <input type="text" name="npm" placeholder="NPM" />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>Jurusan:
+            <input type="checkbox" name="ti" /> Teknik Informatika
+            <input type="checkbox" name="si" /> Teknik Industri
+            <input type="checkbox" name="mesin" /> Teknik Mesin
+            <input type="checkbox" name="elektro" /> Teknik Elektro
+        </p>
+        <p>Tempat Tanggal Lahir
+            <input type="date" name="tanggal" />
+        </p>
+
+        <p>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Password..." />
+        </p>
+        <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+        </p>
+        <p>
+            <label>Tentang Saya:</label>
+            <textarea name="tentang saya"></textarea>
+        </p>
+        <input type="submit" onClick="konfirmasi(this.form);" value="Kirim" />
+
+    </form>
+</body>
+
+</html>
